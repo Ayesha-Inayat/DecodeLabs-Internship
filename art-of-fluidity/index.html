@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Fluidity | Responsive Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="water-canvas"></canvas>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Fluidity</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>The Art of Fluidity</h1>
+                    <p>Experience a seamless journey through modern design where boundaries dissolve and form meets function in perfect harmony.</p>
+                    <a href="#gallery" class="btn">Explore More</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="blob blob-1"></div>
+                    <div class="blob blob-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="fluid-motion">
+            <div class="container">
+                <h2 class="section-title">Fluidity in Motion</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-visual">
+                            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="Abstract fluid colors">
+                        </div>
+                        <div class="card-content">
+                            <h3>Organic Flow</h3>
+                            <p>Discover shapes that mimic the natural world, creating a sense of calm and continuity in digital spaces.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-visual">
+                            <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80" alt="Dynamic light waves">
+                        </div>
+                        <div class="card-content">
+                            <h3>Dynamic Waves</h3>
+                            <p>Interactive elements that respond to user intent with grace, ensuring every click feels meaningful.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-visual">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Luminous 3D layers">
+                        </div>
+                        <div class="card-content">
+                            <h3>Luminous Layers</h3>
+                            <p>Depth and transparency combined to create a sophisticated interface that breathes and evolves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2 class="section-title">The Philosophy</h2>
+                        <p>The Art of Fluidity is more than just a design trend; it's a commitment to creating digital experiences that feel alive. We believe that technology should adapt to the user, not the other way around.</p>
+                        <p>Our approach combines organic shapes, intuitive motion, and a palette inspired by the natural world to bridge the gap between human intuition and digital interaction.</p>
+                        <ul class="about-list">
+                            <li>Adaptive Architecture</li>
+                            <li>Intuitive User Flow</li>
+                            <li>Harmonious Visuals</li>
+                        </ul>
+                    </div>
+                    <div class="about-visual">
+                        <div class="fluid-shape"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="connect">
+            <div class="container">
+                <div class="connect-wrapper">
+                    <div class="connect-info">
+                        <h2>Connect</h2>
+                        <p>Have a vision you'd like to bring to life? Let's collaborate and build something extraordinary together.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The Art of Fluidity. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
