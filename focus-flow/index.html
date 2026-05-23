@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Productivity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <header>
+            <div class="header-top">
+                <h1 id="greeting">Hello!</h1>
+                <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                    <span class="icon">🌓</span>
+                </button>
+            </div>
+            <h2 id="display-focus">What's your focus for today?</h2>
+        </header>
+
+        <main>
+            <section class="card settings-section">
+                <h3>Quick Toggles</h3>
+                <div class="toggles-grid">
+                    <div class="toggle-item">
+                        <span>Privacy Mode</span>
+                        <label class="switch">
+                            <input type="checkbox" id="privacy-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-item">
+                        <span>Compact View</span>
+                        <label class="switch">
+                            <input type="checkbox" id="compact-toggle">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card focus-input-section">
+                <input type="text" id="focus-input" placeholder="Enter your main focus...">
+                <button id="set-focus" class="btn-primary">Set Focus</button>
+            </section>
+
+            <div class="grid">
+                <section class="card counter-section">
+                    <h3>Focus Sessions</h3>
+                    <div class="counter-display">
+                        <span id="session-count">0</span>
+                    </div>
+                    <div class="counter-controls">
+                        <button id="decrement" class="btn-secondary">-</button>
+                        <button id="increment" class="btn-primary">+</button>
+                    </div>
+                    <button id="reset-counter" class="btn-link">Reset</button>
+                </section>
+
+                <section class="card quote-section">
+                    <h3>Daily Inspiration</h3>
+                    <p id="quote-text">"The secret of getting ahead is getting started."</p>
+                    <button id="new-quote" class="btn-secondary">New Quote</button>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with FocusFlow &copy; 2026</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
